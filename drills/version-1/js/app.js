@@ -29,7 +29,8 @@ function displayMessage(message){
   }
 }
 function changeMessage(){
-  messageEl.setAttribute('class', 'end-message')
+  mes = document.getElementsByClassName('message')[0];
+  mes.setAttribute('class', 'end-message');
 }
 function makeMove(square, index){
   board[index] = currentPlayer;
